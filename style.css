@@ -81,6 +81,7 @@ h6 {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-top: 40px;
 }
 
 p {
@@ -151,6 +152,15 @@ nav {
   color: #ffffff;
 }
 
+button {
+  border: none;
+  width: 200px;
+}
+
+button:focus {
+  outline: none;
+}
+
 .btn {
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
@@ -177,13 +187,14 @@ nav {
 
 #login-button {
   margin-top: 20px;
+  margin-left: 18px;
   border: none;
 }
 
 #contact-manage {
-  border: 1px solid #ffbc00;
+  border: 2px solid #ffbc00;
   background-color: white;
-  color: #ffbc00;
+  color: #3A3839;
 }
 
 .loginbtn {
@@ -259,7 +270,7 @@ nav {
 
 #section-a {
   padding-top: 150px;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
 
 }
 
@@ -277,12 +288,7 @@ nav {
   background: white;
 }
 
-#section-b {
-  display: flex;
-  margin: 100px 100px 200px 100px;
-  /* padding: 100px; */
-  align-items: left;
-}
+
 
 #section-d {
   display: flex;
@@ -291,6 +297,105 @@ nav {
   align-items: right;
 }
 
+
+.section-b-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "contact-form" "contact-img" ;
+  /* grid-template-areas: "contact-form" "contact-img" */
+  margin: 100px 100px 200px 100px;
+  /* padding-top: 300px; */
+  z-index: 20;
+  box-sizing: none;
+
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "contact-form" "contact-img" ;
+  /* grid-template-areas: "contact-form" "contact-img" */
+  padding: 50px;
+  padding-top: 300px;
+  z-index: 20;
+
+}
+
+.section-e-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "contact-form" "contact-img" ;
+  /* grid-template-areas: "contact-form" "contact-img" */
+  padding: 50px;
+
+  z-index: 20;
+
+}
+
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 50px;
+  z-index: 20;
+}
+
+.profile-title {
+  padding-top: 150px;
+}
+
+.profile-card{
+
+  padding-left: 50%;
+}
+
+.profile-table {
+
+    padding-right: 20%;
+}
+
+.contact-form {
+  text-align: left;
+  width: 90%;
+  padding-left: 20%;
+}
+
+.contact-img {
+  /* width: 85%; */
+  padding-right: 20%;
+  padding-left: 5%;
+}
+
+
+.section-b-text {
+  text-align: left;
+  width: 90%;
+  padding-left: 20%;
+}
+
+.section-b-img {
+  width: 86%;
+  padding-right: 10%;
+  /* padding-left: 5%; */
+}
+
+.section-d-text {
+  margin: 0 5% 5% 5%;
+  text-align: left;
+  width: 90%;
+  /* padding-left: 20%; */
+}
+
+.login-img {
+  width: 85%;
+  padding-right: 20%;
+  padding-left: 5%;
+}
+
+.register-subhead {
+  padding: 20px 0px 0px 40px;
+  margin-top: 20px;
+}
 
 .paragraph1 {
   padding-top: 20px;
@@ -318,8 +423,9 @@ nav {
 
 #paragraph {
   margin-top: 15px;
+  /* margin-right: -20; */
   padding-bottom: 100px;
-  width: 70%;
+  /* width: 70%; */
 }
 
 #paragraphbtn {
@@ -409,76 +515,28 @@ box-shadow: 0px 44px 95px -30px rgba(168,168,168,0.3);
 
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-areas: "contact-form" "contact-img" ;
-  /* grid-template-areas: "contact-form" "contact-img" */
-  padding: 50px;
-  padding-top: 300px;
-  z-index: 20;
-
-}
-
-
-
-.profile-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 50px;
-  z-index: 20;
-}
-
-.profile-title {
-  padding-top: 150px;
-}
-
-.profile-card{
-
-  padding-left: 50%;
-}
-
-.profile-table {
-
-    padding-right: 20%;
-}
-
-.contact-form {
-  text-align: left;
-  width: 90%;
-  padding-left: 20%;
-}
-
-.contact-img {
-  /* width: 85%; */
-  padding-right: 20%;
-  padding-left: 5%;
-}
-
-.login-img {
-  width: 85%;
-  padding-right: 20%;
-  padding-left: 5%;
-}
 
 .contact-titles {
   padding-left: 22px;
 }
 
-#contact-button1 {
-  /* margin-top: 35px; */
-  padding-left: 35px;
 
-}
 
 .contactbutton {
   width: 100%;
   text-align: left;
 }
 
+.form-heading {
+  margin-left: 35px;
+}
+
+.form-heading1 {
+  margin-left: 40px;
+}
 
 #contact-manage {
-  padding-left: 35px;
+  padding-left: 40px;
 }
 
 /* form {
@@ -599,6 +657,61 @@ td, th {
 
 }
 
+ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+
+
+a {
+  font-family: 'Avenir';
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: black;
+  text-decoration: none;
+  /* box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4); */
+}
+
+li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.wiggle:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+
+
+.footer {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  background-color: white;
+  line-height: 1.3;
+  font-family: Helvetica;
+  text-transform: uppercase;
+
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
 
 
 
@@ -607,28 +720,69 @@ td, th {
 
 @media screen and (max-width:1024px){
 
+
+  .contact-form {
+    padding-left: 0;
+  }
+
   .contact-grid {
     display: grid;
     grid-template-columns: 100%;
     grid-template-areas:
     "contact-form";
     /* grid-template-areas: "contact-form" "contact-img" */
-    padding: 50px;
-    padding-top: 300px;
+    /* padding: 50px; */
+    padding-top: 250px;
     z-index: 20;
   }
+
+  .section-e-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "contact-form";
+    /* grid-template-areas: "contact-form" "contact-img" */
+    /* padding: 50px; */
+    padding-top: 250px;
+    z-index: 20;
+  }
+
+
+  .section-b-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "section-b-text";
+    /* grid-template-areas: "contact-form" "contact-img" */
+    /* padding: 50px; */
+    /* padding-top: 300px; */
+    z-index: 20;
+
+  }
+
+
 
   .login-img {
     display: none;
   }
 
+  .contact-img {
+    display: none;
+  }
 
+
+  .section-b-img {
+    display: none;
+  }
   body{
     overflow-x: hidden;
   }
 
   nav{
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    padding: 2% 10% 0 10%;
+    justify-content: space-between;
+
 
   }
 
@@ -644,6 +798,7 @@ td, th {
   #section-a ul {
     display: flex;
     flex-direction: column;
+
 
     /* padding-bottom: 100px; */
   }
@@ -666,7 +821,7 @@ td, th {
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
-    z-index: 1;
+
   }
   .navlinks a {
     font-family: 'Avenir';
@@ -675,14 +830,16 @@ td, th {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: #ffffff;
+
   }
 
   .navlinks li{
     /* opacity: 0; */
     /* padding-top: 60px; */
+    z-index: 5;
   }
   .navlogo {
-      z-index: 5;
+      z-index: 12;
   }
 
   .login {
@@ -696,12 +853,13 @@ td, th {
 
   .menu {
     display: block;
-    z-index: 2;
+    z-index: 20;
   }
 
   .nav-active {
     /* background-color: black; */
     transform: translateX(0%);
+    z-index: 10;
   }
 
   /* @media
@@ -711,6 +869,7 @@ td, th {
   	table {
   	  	width: 100%;
         text-align: center;
+        z-index: -10;
 
   	}
 
@@ -719,72 +878,59 @@ td, th {
 
   		display: block;
 
+
   	}
+
+
 
   	/* Hide table headers (but not display: none;, for accessibility) */
   	thead tr {
   		position: absolute;
   		top: -9999px;
   		left: -9999px;
+      /* z-index: -15; */
+
   	}
 
   	/* tr { border: 1px solid #ccc; } */
 
+    tr {
+      z-index: -15;
+    }
+
   	td {
   		/* Behave  like a "row" */
   		border: none;
-  		position: relative;
-  		padding-left: 50%;
+  		/* position: relative; */
+  		padding-left: 10%;
+      z-index: -1;
+
   	}
+
+
 
   	td:before {
   		/* Now like a table header */
-  		position: absolute;
+  		/* position: absolute; */
   		/* Top/left values mimic padding */
   		top: 6px;
   		left: 6px;
   		width: 45%;
-  		padding-right: 10px;
+  		padding-right: 20px;
   		white-space: nowrap;
   		/* Label the data */
-  		content: attr(data-column);
 
+  		content: attr(data-column);
+      /* z-index: -1; */
   		color: #000;
   		/* font-weight: bold; */
   	}
 
   }
 
-  /* .contact-grid {
-      grid-template-areas:
-        "contact-grid"
-        "contact-img"
-        ;
-    } */
 
-
-
-
-/* .contact-img {
-  grid-template-columns: 1;
-} */
-
-  /* .text-manage {
-    margin-left: 2%;
-    padding-bottom: 30px;
+  @media (min-width: 500px) {
+    ul {
+      grid-auto-flow: column;
+    }
   }
-
-  .text-manage2 {
-    margin-left: 2%;
-
-  } */
-/* @@keyframes navLinkFade {
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-} */
