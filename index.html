@@ -39,56 +39,58 @@
         <img src="img/logo.svg" alt="">
       </div>
     </section>
-    <button type="button" class="btn" onclick="location.href='register.html'">register</button>
-   </div>\<!-- <div class="social-media">
-     <ul class="social">
-       <li><a href="https://www.instagram.com/sweetsgains/"img src="img/instagram.svg" alt="">></li>
-       <li><a href="https://www.facebook.com/sweetsgains/?modal=admin_todo_tour"img src="img/facebook.svg" alt=""></li>
-     </ul>
-
-   </div> -->
+    <button id="herobutton" type="button" class="btn" onclick="location.href='register.html'">register</button>
+    <div class="social-media">
+      <ul class="social">
+        <li><a href="https://www.facebook.com/sweetsgains/?modal=admin_todo_tour"><img src="img/facebook.svg" alt=""class="social-media-icon"></a></li>
+        <li><a href="https://www.instagram.com/sweetsgains/"><img src="img/instagram.svg" alt="" class="social-media-icon"></a></li>
+        <li><a href="https://www.instagram.com/sweetsgains/"><img src="img/twitter.svg" alt="" class="social-media-icon"></a></li>
+      </ul>
+    </div>
   </header>
   <main id="main">
-    <section id="section-a" class="grid">
+    <section id="a" class="grid">
       <h4>where to begin</h4>
       <h5>choose your level</h5>
-      <ul>
-        <li>
-          <div class="card">
-            <div class="card-icon">
-              <img class="icon-on" src="img/beginner.svg" alt="">
+      <div class="home-card">
+        <ul class="home-cards">
+          <li>
+            <div class="card">
+              <div class="card-icon">
+                <img class="icon-on" src="img/beginner.svg" alt="">
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Beginner</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vel, laboriosam.</p>
+              </div>
             </div>
-            <div class="card-content">
-              <h3 class="card-title">Beginner</h3>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-icon">
+            <img class="icon-on" src="img/intermediate.svg" alt="">
+            </div>
+              <div class="card-content">
+                <h3 class="card-title">Intermediate</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Vel, laboriosam.</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="card">
-            <div class="card-icon">
-          <img class="icon-on" src="img/intermediate.svg" alt="">
-          </div>
-            <div class="card-content">
-              <h3 class="card-title">Intermediate</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Vel, laboriosam.</p>
-            </div>
-          </div>
-        </li><li>
-          <div class="card">
-            <div class="card-icon">
-            <img class="icon-on" src="img/expert.svg" alt="">
               </div>
-            <div class="card-content">
-              <h3 class="card-title">Expert</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Vel, laboriosam.</p>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li><li>
+            <div class="card">
+              <div class="card-icon">
+              <img class="icon-on" src="img/expert.svg" alt="">
+                </div>
+              <div class="card-content">
+                <h3 class="card-title">Expert</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Vel, laboriosam.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="section-b" class="section-b-grid">
       <div class="section-b-text" >
@@ -131,9 +133,12 @@
     </section>
       <section id="section-e" class="section-e-grid">
         <div class="section-b-text">
-          <h2 class="content-title">Find Out More</h2>
+          <h2 class="content-title" id="find-out-more">Find Out More</h2>
               <input type="text" name="email" placeholder="email">
-                <button type="button" class="btn"  onclick="location.href='register.html'">register</button>
+              <div id="find-out-more-button">
+                  <button type="button" class="btn" id="find-out-more" onclick="location.href='register.html'">register</button>
+              </div>
+
                 </div>
           <div class="section-b-img">
             <img src="img/arms.svg" alt="">
@@ -141,16 +146,37 @@
         </section>
     </main>
   <footer>
+    <div class="social-media">
+      <ul id="social-invert" class="social">
+        <li><a href="https://www.facebook.com/sweetsgains/?modal=admin_todo_tour"><img src="img/facebook.svg" alt=""class="social-media-icon"></a></li>
+        <li><a href="https://www.instagram.com/sweetsgains/"><img src="img/instagram.svg" alt="" class="social-media-icon"></a></li>
+        <li><a href="https://www.instagram.com/sweetsgains/"><img src="img/twitter.svg" alt="" class="social-media-icon"></a></li>
+      </ul>
+  </div>
     <div class="footer">
       <ul>
-        <li class="wiggle"><a href="">privacy</a></li>
         <li class="wiggle"><a href="">contact</a></li>
-        <li class="wiggle"><a href="">Email</a></li>
-        <li class="wiggle"><a href="">more</a></li>
-        <li class="wiggle"><a href="">more</a></li>
+        <!-- <li class="wiggle">
+          <p>💪</p> -->
+      </ul>
+      <ul class="footer-list">
+        <li class="wiggle"><p>💪</p> </li>
+        <li class="wiggle"><a href="">sitemap</a></li>
+        <li class="wiggle"><a href="idex.html">home</a></li>
+        <li class="wiggle"><a href="classes.html">classes</a></li>
+        <li class="wiggle"><a href="contact.html">contact</a></li>
+        <li class="wiggle"><a href="levels.html">levels</a></li>
+        <li class="wiggle"><a href="login.html">login</a></li>
+        <li class="wiggle"><a href="register.html">register</a></li>
+        <li class="wiggle"><a href="testimonial.html">testimonial</a></li>
         <li class="wiggle">
-          <p>💪</p>
-        </li>
+          <p>💪</p></li>
+      </ul>
+        <ul class="footer-list">
+        <li class="wiggle"><a href="">Email</a></li>
+
+        <!-- <li class="wiggle">
+          <p>💪</p> -->
       </ul>
     </div>
   </footer>

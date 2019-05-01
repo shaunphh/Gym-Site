@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact</title>
+  <title>Admin</title>
   <link rel="shortcut icon" type= "image/png" href="img/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -33,32 +33,37 @@
       </div>
     </nav>
     </header>
-    <main id="main-contact">
-      <section id="section-a-contact" class="contact-grid">
-            <div class="contact-form">
-              <h4 class="form-heading1">get in touch</h4>
-              <h5 class="form-heading">contact us</h5>
-              <form>
-                  <label></label>
-                  <input type="text" name="name" placeholder="Name">
-                  <label></label>
-                  <input type="email" name="email" placeholder="Email Address">
-                  <label></label>
-                  <input type="text" name="phone" placeholder="Phone">
-                <p class="full">
-                  <label></label>
-                  <textarea name="message" placeholder="Message" rows="1"></textarea>
-                </p>
-              </form>
-              <div class="contactbutton">
-                  <button  type="button" class="btn" id="contact-button" onclick="location.href='index.html'">submit</button>
-                  <button  type="button" class="btn" id="contact-manage" onclick="location.href='contactmanage.html'">contact manage</button>
+    <main id="main-testimonial">
+      <section id="section-a" class="grid">
+        <h4>you da boss</h4>
+        <h5>administrator</h5>
+        <ul>
+          <li>
+            <a style="text-decoration: none" href="contactmanage.html">
+            <div class="card2">
+              <img id="test-edit" class="test-icon" src="edit/add.svg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">contact manage</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Vel, laboriosam.</p>
               </div>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a style="text-decoration: none" href="testimonialsmanage.html">
+            <div class="card2">
+              <img id="test-edit" class="test-icon" src="edit/add.svg" alt="">
+              <div class="card-content">
+                <h3 class="card-title">manage testimonial</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Vel, laboriosam.</p>
               </div>
-              <div class="contact-img">
-                  <img src="img/contact.png" alt="">
-              </div>
-          </section>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </section>
       </main>
         <script src="app.js"></script>
-      </body>
+    </body>

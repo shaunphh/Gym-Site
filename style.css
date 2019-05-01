@@ -80,7 +80,7 @@ h6 {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 p {
@@ -192,6 +192,11 @@ button:focus {
   border: none;
 }
 
+.register-button {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
 #not-member {
   margin-left: 30px;
 }
@@ -292,10 +297,27 @@ button:focus {
 
 
 #section-a {
-  padding-top: 200px;
+  padding-top: 250px;
   margin-bottom: 7em;
 
 }
+
+#a {
+  /* padding-top: 250px; */
+  margin-bottom: 7em;
+
+}
+
+.home-cards {
+  padding-top: 150px;
+  align-items: center;
+}
+
+
+
+
+
+
 
 
 #section-a ul {
@@ -782,6 +804,61 @@ li:last-child {
   animation: wave-animation 0.3s infinite;
 }
 
+.footer {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  background-color: white;
+  line-height: 1.3;
+  font-family: Helvetica;
+  text-transform: uppercase;
+
+}
+
+.footer-list {
+  display: block;
+}
+
+#herobutton {
+  margin-top: 60px;
+}
+
+.social ul {
+  display: flex;
+  /* display: inline-grid; */
+  grid-auto-flow: row;
+  grid-gap: 24px;
+
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  padding-right: 250px;
+  padding-top: 80px;
+
+}
+
+.social-media-icon {
+  width: 20px;
+  margin: 0px 100px 0px 0px;
+}
+
+#social-invert {
+  filter: invert(100%);
+  padding-bottom: 50px;
+  padding-left: 10px;
+}
+
+#find-out-more {
+  padding-left: 20px;
+}
+
+#find-out-more-button {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
 .radio-button {
   width: 100%;
   display: inline-flex;
@@ -832,21 +909,6 @@ cursor: pointer;
 }
 
 
-
-
-
-
-
-.footer {
-  display: flex;
-  height: 30vh;
-  width: 100%;
-  background-color: white;
-  line-height: 1.3;
-  font-family: Helvetica;
-  text-transform: uppercase;
-
-}
 
 @keyframes wave-animation {
   0%,
@@ -1130,7 +1192,10 @@ cursor: pointer;
 
   	}
 
-
+  .home-cards {
+    display: flex;
+    flex-direction: column;
+  }
 
   	td:before {
   		/* Now like a table header */
